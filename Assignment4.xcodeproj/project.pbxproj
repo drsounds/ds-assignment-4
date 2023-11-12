@@ -14,6 +14,12 @@
 		8477707B2AE44B0800811CF3 /* Assignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477707A2AE44B0800811CF3 /* Assignment4Tests.swift */; };
 		847770852AE44B0800811CF3 /* Assignment4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770842AE44B0800811CF3 /* Assignment4UITests.swift */; };
 		847770872AE44B0800811CF3 /* Assignment4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770862AE44B0800811CF3 /* Assignment4UITestsLaunchTests.swift */; };
+		847770CB2AE5892800811CF3 /* GuessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770CA2AE5892800811CF3 /* GuessImageView.swift */; };
+		847770CC2AE5892800811CF3 /* GuessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770CA2AE5892800811CF3 /* GuessImageView.swift */; };
+		847770CD2AE5892800811CF3 /* GuessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770CA2AE5892800811CF3 /* GuessImageView.swift */; };
+		847770D42AFD62BC00811CF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847770D32AFD62BC00811CF3 /* UIKit.framework */; platformFilter = ios; };
+		84C67D6A2AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84C67D692AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel */; };
+		84C67D6C2AFFA6CA007416AA /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C67D6B2AFFA6CA007416AA /* ImageClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,10 @@
 		847770802AE44B0800811CF3 /* Assignment4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847770842AE44B0800811CF3 /* Assignment4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4UITests.swift; sourceTree = "<group>"; };
 		847770862AE44B0800811CF3 /* Assignment4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		847770CA2AE5892800811CF3 /* GuessImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessImageView.swift; sourceTree = "<group>"; };
+		847770D32AFD62BC00811CF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		84C67D692AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PoseNetMobileNet075S8FP16.mlmodel; path = ../../../../Downloads/PoseNetMobileNet075S8FP16.mlmodel; sourceTree = "<group>"; };
+		84C67D6B2AFFA6CA007416AA /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847770D42AFD62BC00811CF3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,7 @@
 				847770792AE44B0800811CF3 /* Assignment4Tests */,
 				847770832AE44B0800811CF3 /* Assignment4UITests */,
 				847770662AE44B0600811CF3 /* Products */,
+				847770D22AFD62BC00811CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +107,14 @@
 		847770672AE44B0600811CF3 /* Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
+				84C67D672AFF9C80007416AA /* Models */,
 				847770682AE44B0600811CF3 /* Assignment4App.swift */,
 				8477706A2AE44B0600811CF3 /* ContentView.swift */,
 				8477706C2AE44B0800811CF3 /* Assets.xcassets */,
 				8477706E2AE44B0800811CF3 /* Assignment4.entitlements */,
 				8477706F2AE44B0800811CF3 /* Preview Content */,
+				847770CA2AE5892800811CF3 /* GuessImageView.swift */,
+				84C67D6B2AFFA6CA007416AA /* ImageClassifier.swift */,
 			);
 			path = Assignment4;
 			sourceTree = "<group>";
@@ -127,6 +142,22 @@
 				847770862AE44B0800811CF3 /* Assignment4UITestsLaunchTests.swift */,
 			);
 			path = Assignment4UITests;
+			sourceTree = "<group>";
+		};
+		847770D22AFD62BC00811CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847770D32AFD62BC00811CF3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C67D672AFF9C80007416AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84C67D692AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847770CB2AE5892800811CF3 /* GuessImageView.swift in Sources */,
 				8477706B2AE44B0600811CF3 /* ContentView.swift in Sources */,
+				84C67D6C2AFFA6CA007416AA /* ImageClassifier.swift in Sources */,
+				84C67D6A2AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel in Sources */,
 				847770692AE44B0600811CF3 /* Assignment4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847770CC2AE5892800811CF3 /* GuessImageView.swift in Sources */,
 				8477707B2AE44B0800811CF3 /* Assignment4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847770CD2AE5892800811CF3 /* GuessImageView.swift in Sources */,
 				847770872AE44B0800811CF3 /* Assignment4UITestsLaunchTests.swift in Sources */,
 				847770852AE44B0800811CF3 /* Assignment4UITests.swift in Sources */,
 			);
@@ -442,7 +478,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.buddhaflow.Assignment4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +517,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.buddhaflow.Assignment4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
