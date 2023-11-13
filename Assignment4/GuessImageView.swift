@@ -23,25 +23,25 @@ class GuessImageViewModel : ObservableObject {
             }
         })
     }
-}
-	
+}	
+
 struct GuessImageView : View {
     @StateObject private var model = GuessImageViewModel()
     var body: some View {
         VStack(alignment: .center) {
             HStack(alignment: .center) {
                 VStack {
-                    Image("fish.jpg")
+                    Image("fish").resizable().frame(width: 110, height: 110)
                     Button(action: {
-                        model.tellImage("fish.jpg")
+                        model.tellImage("fish")
                     }) {
                         Text("Tell what is it")
                     }
                 }
                 VStack {
-                    Image("giraff.jpg")
+                    Image("giraff").resizable().frame(width: 110, height: 110)
                     Button(action: {
-                        model.tellImage("giraff.jpg")
+                        model.tellImage("giraff")
                     }) {
                         Text("Tell what is it")
                     }
