@@ -18,8 +18,9 @@
 		847770CC2AE5892800811CF3 /* GuessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770CA2AE5892800811CF3 /* GuessImageView.swift */; };
 		847770CD2AE5892800811CF3 /* GuessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847770CA2AE5892800811CF3 /* GuessImageView.swift */; };
 		847770D42AFD62BC00811CF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847770D32AFD62BC00811CF3 /* UIKit.framework */; platformFilter = ios; };
-		84C67D6A2AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84C67D692AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel */; };
 		84C67D6C2AFFA6CA007416AA /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C67D6B2AFFA6CA007416AA /* ImageClassifier.swift */; };
+		DA0917CB2B0782B100263C17 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA0917CA2B0782B100263C17 /* SqueezeNet.mlmodel */; };
+		DA0917CC2B0782B100263C17 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA0917CA2B0782B100263C17 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,8 @@
 		847770862AE44B0800811CF3 /* Assignment4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		847770CA2AE5892800811CF3 /* GuessImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessImageView.swift; sourceTree = "<group>"; };
 		847770D32AFD62BC00811CF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		84C67D692AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PoseNetMobileNet075S8FP16.mlmodel; path = ../../../../Downloads/PoseNetMobileNet075S8FP16.mlmodel; sourceTree = "<group>"; };
 		84C67D6B2AFFA6CA007416AA /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		DA0917CA2B0782B100263C17 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +156,7 @@
 		84C67D672AFF9C80007416AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84C67D692AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel */,
+				DA0917CA2B0782B100263C17 /* SqueezeNet.mlmodel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,9 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				847770CB2AE5892800811CF3 /* GuessImageView.swift in Sources */,
+				DA0917CB2B0782B100263C17 /* SqueezeNet.mlmodel in Sources */,
 				8477706B2AE44B0600811CF3 /* ContentView.swift in Sources */,
 				84C67D6C2AFFA6CA007416AA /* ImageClassifier.swift in Sources */,
-				84C67D6A2AFF9CD2007416AA /* PoseNetMobileNet075S8FP16.mlmodel in Sources */,
 				847770692AE44B0600811CF3 /* Assignment4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847770CC2AE5892800811CF3 /* GuessImageView.swift in Sources */,
+				DA0917CC2B0782B100263C17 /* SqueezeNet.mlmodel in Sources */,
 				8477707B2AE44B0800811CF3 /* Assignment4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

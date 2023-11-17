@@ -15,7 +15,7 @@ import UIKit
 class ImageClassifier {
     static func classifyImage(image: CGImage, completionHandler: @escaping (String) -> Void) {
         let config = MLModelConfiguration()
-        guard let model = try? PoseNetMobileNet075S8FP16(configuration: config) else {
+        guard let model = try? SqueezeNet(configuration: config) else {
             return
         }
         guard let visionModel = try? VNCoreMLModel(for: model.model) else {
